@@ -1,14 +1,18 @@
 <?php
-/*
-Plugin Name: WP Custom Enhancements
-Description: Improves speed and security, removes unnecessary features, adds multiple layers of protection against common attack vectors.
-Author: ITarchitects
-Version: 1.0
-*/
 
+/**
+ * Plugin Name: WP Custom Enhancements
+ * Description: Improves speed and security, removes unnecessary features, adds multiple layers of protection against common attack vectors
+ * Version: 1.0
+ * Author: Mark Longden
+ * Author URI: https://itarchitects.co.nz
+ * License: GPL v2 or later
+ */
+
+ // Prevent direct access
 if (! defined('ABSPATH')) {
     exit;
-} // Prevent direct access
+}
 
 
 /* =====================================================
