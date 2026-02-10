@@ -106,6 +106,8 @@ remove_action('wp_head', 'wlwmanifest_link'); // Windows Live Writer
 remove_action('wp_head', 'rsd_link');         // Really Simple Discovery
 remove_action('wp_head', 'wp_generator');     // WP version
 add_filter('the_generator', '__return_empty_string');
+add_filter('wp_generator', '__return_empty_string');
+add_filter('elementor/frontend/print_generator_tag', '__return_false');
 
 // Remove shortlinks (head + HTTP headers)
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
